@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Usuários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Painel de Controle de Usuários</h1>
+
+    <section class="form-section">
+      <h2>Adicionar Usuário</h2>
+      <form id="formUsuario">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="number" id="idade" placeholder="Idade" required>
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+
+    <section class="lista-section">
+      <h2>Lista de Usuários</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Idade</th>
+          </tr>
+        </thead>
+        <tbody id="listaUsuarios">
+          <!-- Usuários irão aparecer aqui -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
